@@ -1,33 +1,67 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <link rel="stylesheet" href="fichier.css" />
+  <script type="text/javascript" src="formulaire.js"></script>
+  <title> fiche personne </title>
+</head>
+<body>
+<h1> Saisie d'une fiche personne </h1>
+<form>
+  <fieldset>
+    <legend> vos coordonnées </legend>
+<table>
+  
+    
+      <input type="radio" name="civilité" value="Madame" id="madame" required>
+      <label for="madame"> Madame </label>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+      <input type="radio" name="civilité" value="mademoiselle" id="mademoiselle" required>
+      <label for="mademoiselle"> Mademoiselle </label>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+      <input type="radio" name="civilité" value="monsieur" id="monsieur" required>
+      <label for="monsieur"> Monsieur </label>
+  <tr>
+    <td> Nom </td>
+    <td>
+      <input type="text"  id = "Nom" autofocus required />
+    </td>
+  </tr>
+<tr>
+  <td> Prenom </td>
+  <td>
+    <input type="text" id="Prénom"  required />
+  </td>
+</tr>
+<tr>
+  <td> Date de naissance </td>
+  <td>
+    <input type="date" id="date de naissance" placeholder="JJ/MM/AAAA" />
+  </td>
+</tr>
+<tr>
+  <td> Adresse </td>
+  <td>
+    <input type="text" id="adresse" required />
+  </td>
+</tr>
+<tr>
+  <td>Mail</td>
+  <td>
+    <input type="text" id="Mail" required />
+  </td>
+</tr>
+</table>
+<p class="colorp">
+<input type="submit" value ="Envoyer" onclick ="validation()" class="colorp" />
+</p>
+
+
+</fieldset>
+</form>
+
+
+<div id="error"> </div>
+<div id="resultat">  </div>
+</body>
 </html>
