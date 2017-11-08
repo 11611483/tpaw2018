@@ -1,0 +1,60 @@
+body
+{
+	background-image: url("image.JPG");
+	font-family: comic sans ms;
+	color:black;
+	font-weight: bold;
+	/* align-content: center; */
+}
+
+
+
+.colorp
+{
+	color: blue;
+	font-family: comic sans ms;
+	font-weight: bold;
+}
+
+h1
+{
+	color: rgb(200,30,12);
+	border:3px rgb(255,30,12) dotted;
+	border-radius: 20px ;
+
+
+	background-size: 20px;
+	background-color: rgba(255,30,12,0.5) ;
+	text-align: center; 
+}
+td
+{
+	width:400px;
+	display: inline-block;
+}
+fieldset
+{
+	background-color: rgba(255,30,12,0.5);
+	border: 5px rgb(255,30,12) solid;
+}
+legend
+{
+	color:rgb(200,30,12);
+}
+div
+{
+	display: block ;
+}
+#error
+{
+	background-size:20px;
+	background-color:red;
+	text-align:center;
+}
+
+#resultat
+{
+	background-size:20px;
+	background-color:green;
+	text-align:center;
+}
